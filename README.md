@@ -94,7 +94,7 @@ export DEEPSEEK_MODEL="deepseek-chat"
 
 ```bash
 # 启动MCP服务器
-cd mcp
+cd mcp_client
 python server.py
 ```
 

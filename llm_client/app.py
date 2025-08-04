@@ -4,7 +4,7 @@ import json
 from fastmcp import Client
 from openai import OpenAI
 
-from mcp.config import Config
+from config import Config
 
 
 class UserClient:

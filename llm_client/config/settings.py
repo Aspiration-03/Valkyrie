@@ -15,7 +15,7 @@ class Config:
     DEFAULT_MODEL: str = "deepseek-chat"
     
     # MCP配置
-    DEFAULT_MCP_SCRIPT: str = "server.py"
+    DEFAULT_MCP_SCRIPT: str = "../mcp_client/server.py"
     
     # 系统提示
     SYSTEM_PROMPT: str = """你是一个智能文件管理助手，必须使用提供的工具完成用户的文件操作请求。
