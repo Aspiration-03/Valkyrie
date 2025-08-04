@@ -7,6 +7,7 @@ from .file_operations import register_file_operation_tools
 from .file_deletion import register_file_deletion_tools
 from .file_rename import register_file_rename_tools
 from .ocr_tools import register_ocr_tools
+from .disk_space import register_disk_space_tools
 
 def register_all_tools(mcp):
     """注册所有工具到MCP实例"""
@@ -15,6 +16,7 @@ def register_all_tools(mcp):
     register_file_deletion_tools(mcp)
     register_file_rename_tools(mcp)
     register_ocr_tools(mcp)
+    register_disk_space_tools(mcp)
     
     print("已注册所有工具模块")
 
@@ -24,5 +26,6 @@ __all__ = [
     'register_file_operation_tools', 
     'register_file_deletion_tools',
     'register_file_rename_tools',
-    'register_ocr_tools'
+    'register_ocr_tools',
+    'register_disk_space_tools'
 ]

@@ -9,9 +9,10 @@
 ## ✨ 项目特色
 
 - 🏗️ **模块化架构** - 代码结构清晰，易于维护和扩展
-- 🔧 **11个专业工具** - 覆盖文件管理的各个方面
+- 🔧 **15个专业工具** - 覆盖文件管理的各个方面
 - 🤖 **MCP协议支持** - 与AI助手无缝集成
 - 📝 **OCR识别** - 支持图片和PDF文字提取
+- 💾 **磁盘监控** - 实时监控系统磁盘和内存使用情况
 - ⚙️ **配置管理** - 支持环境变量配置
 - 🛡️ **安全设计** - 删除操作需要确认，预览机制
 
@@ -31,7 +32,8 @@ Valkyrie/
 │       ├── file_operations.py # 🔄 文件移动操作
 │       ├── file_deletion.py   # 🗑️ 文件删除管理
 │       ├── file_rename.py     # ✏️ 文件重命名
-│       └── ocr_tools.py       # 👁️ OCR文字识别
+│       ├── ocr_tools.py       # 👁️ OCR文字识别
+│       └── disk_space.py      # 💾 磁盘空间监控
 ├── data/                      # 📂 示例数据目录
 └── README.md                  # 📖 项目文档
 ```
@@ -58,6 +60,12 @@ Valkyrie/
 
 ### 👁️ OCR文字识别 (1个工具)
 - **`ocr_recognize`** - 从图片/PDF提取文字内容
+
+### 💾 磁盘空间监控 (4个工具)
+- **`get_system_disk_usage`** - 获取系统所有磁盘分区的空间使用情况
+- **`get_directory_space_usage`** - 获取指定目录的空间使用情况
+- **`find_large_files`** - 查找指定目录下的大文件
+- **`get_system_memory_usage`** - 获取系统内存使用情况
 
 ## 🚀 快速开始
 
@@ -150,6 +158,21 @@ ocr_recognize(
 # 识别PDF文档
 ocr_recognize(file_path="./data/document.pdf")
 ```
+
+### 磁盘空间监控
+
+```python
+# 获取系统磁盘使用情况
+get_system_disk_usage()
+
+# 获取指定目录的空间使用情况
+get_directory_space_usage(directory="./data")
+
+# 查找大于100MB的文件
+find_large_files(directory="./data", min_size_mb=100.0)
+
+# 获取系统内存使用情况
+get_system_memory_usage()
 
 ## ⚙️ 配置说明
 
