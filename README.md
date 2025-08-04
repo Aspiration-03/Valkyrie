@@ -2,7 +2,7 @@
 
 一个基于 **MCP (Model Context Protocol)** 协议的模块化文件管理工具集，提供强大的文件操作、OCR识别等功能。
 
-![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
+![Python](https://img.shields.io/badge/Python-3.11+-blue.svg)
 ![FastMCP](https://img.shields.io/badge/FastMCP-Latest-green.svg)
 ![License](https://img.shields.io/badge/License-MIT-yellow.svg)
 
